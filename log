@@ -87,3 +87,17 @@ Thu, Mar 27, 2025  5:08:16 PM:
  1 file changed, 4 insertions(+), 2 deletions(-)
  tests:  0|0
 1ba683b
+Thu, Mar 27, 2025  5:08:46 PM: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function 'prevList':
+list.c:65:5: error: this 'if' clause does not guard... [-Werror=misleading-indentation]
+   65 |     if(list->current != NULL)
+      |     ^~
+list.c:67:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   67 |         if (list->current != NULL)
+      |         ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+32779d3
